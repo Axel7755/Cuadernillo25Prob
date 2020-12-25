@@ -35,6 +35,18 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/ArePol5.o \
+	${OBJECTDIR}/AreaCudrilateros.o \
+	${OBJECTDIR}/AreaPolig.o \
+	${OBJECTDIR}/AreaRecUs.o \
+	${OBJECTDIR}/ArrSumtria.o \
+	${OBJECTDIR}/FisiArre.o \
+	${OBJECTDIR}/FusArreg.o \
+	${OBJECTDIR}/GuarArre.o \
+	${OBJECTDIR}/HorasDiasMinutos.o \
+	${OBJECTDIR}/ImpArreglo.o \
+	${OBJECTDIR}/KilometrosPies.o \
+	${OBJECTDIR}/MenuArre.o \
 	${OBJECTDIR}/main.o
 
 
@@ -61,6 +73,66 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cuadernillo25prob: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cuadernillo25prob ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/ArePol5.o: ArePol5.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ArePol5.o ArePol5.c
+
+${OBJECTDIR}/AreaCudrilateros.o: AreaCudrilateros.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AreaCudrilateros.o AreaCudrilateros.c
+
+${OBJECTDIR}/AreaPolig.o: AreaPolig.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AreaPolig.o AreaPolig.c
+
+${OBJECTDIR}/AreaRecUs.o: AreaRecUs.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AreaRecUs.o AreaRecUs.c
+
+${OBJECTDIR}/ArrSumtria.o: ArrSumtria.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ArrSumtria.o ArrSumtria.c
+
+${OBJECTDIR}/FisiArre.o: FisiArre.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FisiArre.o FisiArre.c
+
+${OBJECTDIR}/FusArreg.o: FusArreg.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FusArreg.o FusArreg.c
+
+${OBJECTDIR}/GuarArre.o: GuarArre.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GuarArre.o GuarArre.c
+
+${OBJECTDIR}/HorasDiasMinutos.o: HorasDiasMinutos.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/HorasDiasMinutos.o HorasDiasMinutos.c
+
+${OBJECTDIR}/ImpArreglo.o: ImpArreglo.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ImpArreglo.o ImpArreglo.c
+
+${OBJECTDIR}/KilometrosPies.o: KilometrosPies.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/KilometrosPies.o KilometrosPies.c
+
+${OBJECTDIR}/MenuArre.o: MenuArre.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MenuArre.o MenuArre.c
 
 ${OBJECTDIR}/main.o: main.c 
 	${MKDIR} -p ${OBJECTDIR}
