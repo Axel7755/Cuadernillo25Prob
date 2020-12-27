@@ -42,11 +42,17 @@ OBJECTFILES= \
 	${OBJECTDIR}/ArrSumtria.o \
 	${OBJECTDIR}/FisiArre.o \
 	${OBJECTDIR}/FusArreg.o \
+	${OBJECTDIR}/Galitro.o \
 	${OBJECTDIR}/GuarArre.o \
 	${OBJECTDIR}/HorasDiasMinutos.o \
 	${OBJECTDIR}/ImpArreglo.o \
 	${OBJECTDIR}/KilometrosPies.o \
 	${OBJECTDIR}/MenuArre.o \
+	${OBJECTDIR}/MetrKilCent.o \
+	${OBJECTDIR}/MetroKiloArreg.o \
+	${OBJECTDIR}/OperaArre.o \
+	${OBJECTDIR}/Operaciones.o \
+	${OBJECTDIR}/VoluArea.o \
 	${OBJECTDIR}/main.o
 
 
@@ -109,6 +115,11 @@ ${OBJECTDIR}/FusArreg.o: FusArreg.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FusArreg.o FusArreg.c
 
+${OBJECTDIR}/Galitro.o: Galitro.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Galitro.o Galitro.c
+
 ${OBJECTDIR}/GuarArre.o: GuarArre.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -133,6 +144,31 @@ ${OBJECTDIR}/MenuArre.o: MenuArre.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MenuArre.o MenuArre.c
+
+${OBJECTDIR}/MetrKilCent.o: MetrKilCent.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MetrKilCent.o MetrKilCent.c
+
+${OBJECTDIR}/MetroKiloArreg.o: MetroKiloArreg.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MetroKiloArreg.o MetroKiloArreg.c
+
+${OBJECTDIR}/OperaArre.o: OperaArre.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperaArre.o OperaArre.c
+
+${OBJECTDIR}/Operaciones.o: Operaciones.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Operaciones.o Operaciones.c
+
+${OBJECTDIR}/VoluArea.o: VoluArea.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/VoluArea.o VoluArea.c
 
 ${OBJECTDIR}/main.o: main.c 
 	${MKDIR} -p ${OBJECTDIR}

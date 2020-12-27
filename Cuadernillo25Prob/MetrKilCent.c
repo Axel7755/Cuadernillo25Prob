@@ -7,19 +7,19 @@ int t,t2;
 int main(int argc, char** argv) {
 
     do{
-        printf("\nQue desea convertir? \n1. Minutos \n2. Horas \n3. Dias \n0.Salir \t");
+        printf("\nQue desea convertir? \n1. Centimetros \n2. Metros \n3. Kilometros \n0.Salir \t");
         scanf("%d",&t);
         if(t!=0){
-            printf("A que desea convertir? \n1. Minutos \n2. Horas \n3. Dias \n0.Salir \t");
+            printf("A que desea convertir? \n1. Centimetros \n2. Metros \n3. Kilometros \n0.Salir \t");
             scanf("%d",&t2);
         }
         switch(t){
             case 1:
                 switch(t2){
                     case 1:    
-                        printf("ingrese minutos  ");
+                        printf("ingrese centimetros  ");
                         scanf("%f",&min);
-                        printf("son %f minutos ",min);
+                        printf("son %f centimetros ",min);
                         break;
                     case 2:    
                         MinHor();
@@ -35,9 +35,9 @@ int main(int argc, char** argv) {
                         HorMin();
                         break;
                     case 2:    
-                        printf("ingrese horas  ");
+                        printf("ingrese metros  ");
                         scanf("%f",&hor);
-                        printf("son %f horas",hor);
+                        printf("son %f metros",hor);
                         break;
                     case 3:    
                         HorDia();
@@ -53,9 +53,9 @@ int main(int argc, char** argv) {
                         DiaHor();
                         break;
                     case 3:    
-                        printf("ingrese dias  ");
+                        printf("ingrese kilometros  ");
                         scanf("%f",&hor);
-                        printf("son %f dias",hor);
+                        printf("son %f kilometros",hor);
                         break;
                 }
                 break;
@@ -72,44 +72,44 @@ int main(int argc, char** argv) {
 }
 
 void MinHor(){
-    printf("ingrese minutos  ");
+    printf("ingrese centimetros  ");
     scanf("%f",&min);
-    hor=min/60;
-    printf("son %f horas ",hor);
+    hor=min/100;
+    printf("son %f metros ",hor);
 }
 
 void MinDia(){
-    printf("ingrese minutos  ");
+    printf("ingrese centimetros  ");
     scanf("%f",&min);
-    dia=(min/60)/24;
-    printf("son %f dias ",dia);
+    dia=(min/100)/1000;
+    printf("son %f Kilometros ",dia);
 }
 
 void HorMin(){
-    printf("ingrese horas  ");
+    printf("ingrese metros  ");
     scanf("%f",&hor);
-    min=hor*60;
-    printf("son %f minutos",min);
+    min=hor*100;
+    printf("son %f centimetros",min);
     
 }
 
 void HorDia(){
-    printf("ingrese horas  ");
+    printf("ingrese metros  ");
     scanf("%f",&hor);
-    dia=hor/24;
-    printf("son %f dias",dia);
+    dia=hor/1000;
+    printf("son %f kilometros",dia);
 }
 
 void DiaMin(){
-    printf("ingrese dias  ");
+    printf("ingrese kilometros  ");
     scanf("%f",&dia);
-    min=(dia*24)*60;
-    printf("son %f minutos",min);
+    min=(dia*1000)*100;
+    printf("son %f centimetros",min);
 }
 
 void DiaHor(){
-    printf("ingrese dias  ");
+    printf("ingrese kilometros  ");
     scanf("%f",&dia);
-    hor=(dia*24);
-    printf("son %f horas",hor);
+    hor=(dia*1000);
+    printf("son %f metros",hor);
 }
