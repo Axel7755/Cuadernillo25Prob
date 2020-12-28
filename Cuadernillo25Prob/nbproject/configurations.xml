@@ -12,11 +12,16 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Apunt.c</itemPath>
       <itemPath>ArePol5.c</itemPath>
       <itemPath>AreaCudrilateros.c</itemPath>
       <itemPath>AreaPolig.c</itemPath>
       <itemPath>AreaRecUs.c</itemPath>
       <itemPath>ArrSumtria.c</itemPath>
+      <itemPath>ContApunt.c</itemPath>
+      <itemPath>DirConVar.c</itemPath>
+      <itemPath>DirecApun.c</itemPath>
+      <itemPath>DireccionVariable.c</itemPath>
       <itemPath>FisiArre.c</itemPath>
       <itemPath>FusArreg.c</itemPath>
       <itemPath>Galitro.c</itemPath>
@@ -29,6 +34,7 @@
       <itemPath>MetroKiloArreg.c</itemPath>
       <itemPath>OperaArre.c</itemPath>
       <itemPath>Operaciones.c</itemPath>
+      <itemPath>SumArre.c</itemPath>
       <itemPath>VoluArea.c</itemPath>
       <itemPath>main.c</itemPath>
     </logicalFolder>
@@ -54,9 +60,7 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="MetrKilCent.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="MetroKiloArreg.c" ex="false" tool="0" flavor2="0">
+      <item path="ContApunt.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -79,6 +83,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Apunt.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="ArePol5.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="AreaCudrilateros.c" ex="false" tool="0" flavor2="0">
@@ -88,6 +94,14 @@
       <item path="AreaRecUs.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="ArrSumtria.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ContApunt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="DirConVar.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="DirecApun.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="DireccionVariable.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="FisiArre.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -112,6 +126,8 @@
       <item path="OperaArre.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Operaciones.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="SumArre.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="VoluArea.c" ex="false" tool="0" flavor2="0">
       </item>

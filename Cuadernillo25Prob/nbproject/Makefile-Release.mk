@@ -35,11 +35,16 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Apunt.o \
 	${OBJECTDIR}/ArePol5.o \
 	${OBJECTDIR}/AreaCudrilateros.o \
 	${OBJECTDIR}/AreaPolig.o \
 	${OBJECTDIR}/AreaRecUs.o \
 	${OBJECTDIR}/ArrSumtria.o \
+	${OBJECTDIR}/ContApunt.o \
+	${OBJECTDIR}/DirConVar.o \
+	${OBJECTDIR}/DirecApun.o \
+	${OBJECTDIR}/DireccionVariable.o \
 	${OBJECTDIR}/FisiArre.o \
 	${OBJECTDIR}/FusArreg.o \
 	${OBJECTDIR}/Galitro.o \
@@ -52,6 +57,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/MetroKiloArreg.o \
 	${OBJECTDIR}/OperaArre.o \
 	${OBJECTDIR}/Operaciones.o \
+	${OBJECTDIR}/SumArre.o \
 	${OBJECTDIR}/VoluArea.o \
 	${OBJECTDIR}/main.o
 
@@ -80,6 +86,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cuadernillo25prob: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cuadernillo25prob ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Apunt.o: Apunt.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Apunt.o Apunt.c
+
 ${OBJECTDIR}/ArePol5.o: ArePol5.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -104,6 +115,26 @@ ${OBJECTDIR}/ArrSumtria.o: ArrSumtria.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ArrSumtria.o ArrSumtria.c
+
+${OBJECTDIR}/ContApunt.o: ContApunt.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ContApunt.o ContApunt.c
+
+${OBJECTDIR}/DirConVar.o: DirConVar.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DirConVar.o DirConVar.c
+
+${OBJECTDIR}/DirecApun.o: DirecApun.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DirecApun.o DirecApun.c
+
+${OBJECTDIR}/DireccionVariable.o: DireccionVariable.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DireccionVariable.o DireccionVariable.c
 
 ${OBJECTDIR}/FisiArre.o: FisiArre.c 
 	${MKDIR} -p ${OBJECTDIR}
@@ -164,6 +195,11 @@ ${OBJECTDIR}/Operaciones.o: Operaciones.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Operaciones.o Operaciones.c
+
+${OBJECTDIR}/SumArre.o: SumArre.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SumArre.o SumArre.c
 
 ${OBJECTDIR}/VoluArea.o: VoluArea.c 
 	${MKDIR} -p ${OBJECTDIR}

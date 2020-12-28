@@ -35,8 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/MetrKilCent.o \
-	${OBJECTDIR}/MetroKiloArreg.o
+	${OBJECTDIR}/ContApunt.o
 
 
 # C Compiler Flags
@@ -63,15 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cuadernillo25prob: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cuadernillo25prob ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/MetrKilCent.o: MetrKilCent.c 
+${OBJECTDIR}/ContApunt.o: ContApunt.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MetrKilCent.o MetrKilCent.c
-
-${OBJECTDIR}/MetroKiloArreg.o: MetroKiloArreg.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MetroKiloArreg.o MetroKiloArreg.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ContApunt.o ContApunt.c
 
 # Subprojects
 .build-subprojects:
